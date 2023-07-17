@@ -54,7 +54,7 @@ nav li {
     margin: 0 auto;
 }
 
-.banner-content{
+.banner-content {
     max-width: 800px;
     margin: 0 auto;
 }
@@ -80,14 +80,73 @@ nav li {
     font-size: 20px;
     font-weight: 600;
     border-radius: 8px;
-background: #FF900E;
-border: none;
-padding: 20px;
-margin-bottom: 50px;
+    background: #FF900E;
+    border: none;
+    padding: 20px;
+    margin-bottom: 50px;
 }
 
 .banner img {
     width: 100%;
+}
+
+/* =====================
+main part
+=================== */
+
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* feature section
+====================== */
+
+.feature {
+    display: flex;
+    align-items: center;
+}
+
+.feature div {
+    width: 50%;
+}
+
+.feature img,
+.feature-info {
+    width: 100%;
+}
+
+.feature-photos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.feature-info {
+    padding-right: 70px;
+    padding-left: 70px;
+}
+
+.feat-title {
+    font-size: 45px;
+    font-weight: 700;
+    color: #131313;
+    margin-bottom: 24px;
+}
+
+.span1 {
+    color: #727272;
+    font-weight: 500;
+}
+
+.span2 {
+    color: #FF900E;
+}
+
+.feat-description {
+    color: #727272;
+    font-weight: 400;
+    margin-bottom: 50px;
 }
 
 /* ===================
@@ -95,29 +154,48 @@ responsive style
 ==================== */
 /* mobile device */
 @media screen and (max-width:576px) {
-    .header{
+    .header {
         padding: 20px;
     }
-    nav{
+
+    nav {
         flex-direction: column;
         row-gap: 20px;
+    }
+
+    .feature {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .feature-photos {
+        gap: 20px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .feature-photos img {
+        width: 100%;
     }
 }
 
 /* medium device */
 @media screen and (min-width: 577px) and (max-width:992px) {
-    .header{
+    .header {
         padding: 50px;
         padding-bottom: 10px;
     }
-    .banner{
+
+    .banner {
         padding-top: 20px;
     }
-    .banner-content{
+
+    .banner-content {
         padding: 50px;
         padding-bottom: 0px;
     }
-    nav{
+
+    nav {
         flex-direction: column;
         row-gap: 20px;
     }
