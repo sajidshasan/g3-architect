@@ -1,7 +1,14 @@
 /* font style */
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap');
 
+/* shared style
+========================== */
 
+.text-grey {
+    color: #727272;
+    font-weight: 400;
+
+}
 * {
     font-family: 'Work Sans', sans-serif;
     margin: 0;
@@ -63,16 +70,10 @@ nav li {
     color: #131313;
     font-size: 64px;
     font-weight: 700;
-}
-
-.banner-description {
-    color: #727272;
-    text-align: center;
-    font-size: 16px;
-    font-weight: 400;
-    margin-top: 50px;
     margin-bottom: 50px;
 }
+
+
 
 .btn {
     color: #FFF;
@@ -83,6 +84,7 @@ nav li {
     background: #FF900E;
     border: none;
     padding: 20px;
+    margin-top: 50px;
     margin-bottom: 50px;
 }
 
@@ -105,6 +107,7 @@ main {
 .feature {
     display: flex;
     align-items: center;
+    padding: 50px 200px;
 }
 
 .feature div {
@@ -143,11 +146,7 @@ main {
     color: #FF900E;
 }
 
-.feat-description {
-    color: #727272;
-    font-weight: 400;
-    margin-bottom: 50px;
-}
+
 
 /* ===================
 responsive style
@@ -168,14 +167,21 @@ responsive style
         padding: 20px;
     }
 
+    .feature div{
+        width: 100%;
+        text-align: center;
+    }
     .feature-photos {
         gap: 20px;
-        display: flex;
-        flex-wrap: wrap;
+        grid-template-columns: 1fr;
     }
 
     .feature-photos img {
         width: 100%;
+    }
+    .feature-info {
+        padding: 0px;
+
     }
 }
 
@@ -198,5 +204,27 @@ responsive style
     nav {
         flex-direction: column;
         row-gap: 20px;
+    }
+    .feature {
+        flex-direction: column;
+        padding: 50px;
+        padding-bottom: 0px;
+        gap: 50px;
+    }
+
+    .feature div{
+        width: 100%;
+        text-align: center;
+    }
+    .feature-photos {
+        gap: 20px;
+    }
+
+    .feature-photos img {
+        width: 100%;
+    }
+    .feature-info {
+        padding: 0px;
+
     }
 }
