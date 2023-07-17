@@ -89,3 +89,36 @@ margin-bottom: 50px;
 .banner img {
     width: 100%;
 }
+
+/* ===================
+responsive style
+==================== */
+/* mobile device */
+@media screen and (max-width:576px) {
+    .header{
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+        row-gap: 20px;
+    }
+}
+
+/* medium device */
+@media screen and (min-width: 577px) and (max-width:992px) {
+    .header{
+        padding: 50px;
+        padding-bottom: 10px;
+    }
+    .banner{
+        padding-top: 20px;
+    }
+    .banner-content{
+        padding: 50px;
+        padding-bottom: 0px;
+    }
+    nav{
+        flex-direction: column;
+        row-gap: 20px;
+    }
+}
